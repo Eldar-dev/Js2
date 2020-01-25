@@ -5,6 +5,7 @@ var saveBtn = document.getElementById("save");
 var clearBtn = document.getElementById("clear");
 var meBtn = document.getElementById("me");
 var lists = document.getElementsByTagName("li");
+var text = document.getElementsByTagName("h1")
 var pAll = document.getElementsByTagName("p");
 var pLists = document.getElementsByClassName("valueLi");
 var container = document.getElementById('form-container');
@@ -45,7 +46,7 @@ inputData.addEventListener('keypress', function(keyPressed){
     var newLi = document.createElement("li");
     var newSpan = document.createElement("span");
     newSpan.innerHTML = 'Удалить';
-    var newPdata = document.createElement("p");
+    var newPdata = document.createElement("h1");
     var newPstyle = document.createElement("p");
     newPstyle.innerHTML = this.value;
     var newSpanTodo  = this.value;
